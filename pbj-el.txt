@@ -1,0 +1,55 @@
+/* 
+ * "PBJ" written in the language "BabySister" 
+ * by Ethanl L
+ * See help.txt for commands 
+ */                 
+
+
+/* Prepare to make sandwich */ 
+goTo(kitchen); 
+goTo(cupboard);
+get(plate);
+hold(plate);
+goTo(counter);
+put(plate);
+
+/* get bread */
+// Get Bread
+goto(pantry);
+open(breadbox);
+get(slice);
+hold(slice);
+get(slice);
+hold(slice)
+goto(plate);
+put(rightSlice);
+put(leftSlice);
+
+// get spreads?
+goTo(fridge);
+open(fridge);
+get(pbj); // what is this?  I know peanutButterJar and jellyJar
+hold(pbj);
+open(pbj);
+
+// Spreading spreads
+goTo(counter);
+get(rightSlice);
+hold(rightSlice);
+spread(rightSlice);
+goto(plate);
+put(rightSlice);
+get(leftSlice);
+hold(leftSlice);
+spread(leftSlice);
+put(leftSlice);
+close(pbj);
+goTo(fridge); // are you doing cleanup before finishing making sandwich?
+put(pbj);
+close(fridge);
+goTo(counter);
+goto(plate);
+get(leftSlice);
+hold(leftSlice);
+goto(rightSlice);
+put(leftSlice);

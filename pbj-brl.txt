@@ -1,0 +1,38 @@
+/* 
+ * "PBJ" written in BabySister 
+ * by Bryan R
+ * See help.txt for commands 
+ */
+
+/* prepare to make sandwich*/
+goTo(kitchen);
+goTo(breadbox); // camelCase
+open(breadbox); 
+get(slice); 
+hold(slice); 
+//start here
+goTo(cupboard);
+get(plate);
+goTo(counter);
+put(plate);
+//insert 9 to 12 here
+put(slice);
+goTo(breadbox);
+get(slice);
+close(breadbox);
+// get pbj
+
+goTo(plate);
+put(slice);
+goTo(pantry);
+get(container);
+goTo(plate);
+hold(container);
+get(leftSlice);
+open(container);
+spread(leftSlice);
+spread(rightSlice);
+goTo(plate);
+put(leftSlice);
+goTo(leftSlice);
+put(rightSlice);
